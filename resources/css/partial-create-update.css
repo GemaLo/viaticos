@@ -1,0 +1,166 @@
+/* @import "bootstrap/dist/css/bootstrap.min.css"; */
+
+/* ====== FONDO CON TEXTURA ====== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/textura-roja2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Se aumentó ligeramente para mejor visibilidad */
+    z-index: -10; /* Se coloca bien atrás para no interferir */
+}
+
+/* ====== CONTENEDOR DEL FORMULARIO ====== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+.title-form {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.custom-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 1000; /* Se asegura que el formulario esté por encima del fondo */
+}
+
+/* Mostrar formulario con animación */
+.custom-form-container.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* ====== INPUTS ====== */
+.custom-form-group {
+    margin-bottom: 15px;
+}
+
+.custom-form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.custom-form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar el input */
+.custom-form-input:focus {
+    border-color: #4b6cb7;
+    box-shadow: 0px 0px 8px rgba(75, 108, 183, 0.4);
+}
+
+/* ====== BOTÓN DE ENVÍO ====== */
+.custom-form-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #c8a47e; /* Café clarito sin degradado */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover en el botón */
+.custom-form-btn:hover {
+    background: #b8956d; /* Un tono más oscuro */
+    transform: scale(1.05);
+}
+
+/* ====== BOTÓN DE CERRAR ====== */
+.custom-form-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en botón de cerrar */
+.custom-form-close:hover {
+    color: #ff4b4b;
+}
+
+
+.don-edit{
+    background-color: #f0f0f0; /* Gris claro */
+    color: #333; /* Texto oscuro */
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: not-allowed; /* Indica que no es editable */
+}
+
+/* ====== MODO OSCURO ====== */
+@media (prefers-color-scheme: dark) {
+    body::before {
+        opacity: 0.2; /* Ajuste de opacidad en modo oscuro */
+    }
+
+    .custom-form-container {
+        background: #1e1e1e;
+        color: white;
+    }
+
+    .custom-form-title {
+        color: white;
+    }
+
+    .custom-form-label {
+        color: #ddd;
+    }
+
+    .custom-form-input {
+        background: #333;
+        color: white;
+        border-color: #555;
+    }
+
+    .custom-form-input:focus {
+        border-color: #4b6cb7;
+    }
+
+    .custom-form-btn {
+        background: #c8a47e;
+    }
+
+    .custom-form-btn:hover {
+        background: #b8956d;
+    }
+}

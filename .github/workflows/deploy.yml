@@ -1,0 +1,16 @@
+name: Deploy Laravel
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Ir al directorio del proyecto y actualizar
+        run: |
+          cd /var/www/html/Viaticos-System/
+          git pull origin dev

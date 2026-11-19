@@ -1,0 +1,159 @@
+body{
+    /* background-image: url("../images/Bnadera_prueba.png");  */
+    /* background-image: url("../images/textura-roja2.png" );  */
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/textura-roja2.png" );
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Solo afecta el fondo */
+  z-index: -1;
+}
+
+.btns-gob{
+  background-color: #A57F2C !important;
+  border-color: #ddb662;
+  color:white !important;
+}
+
+.btns-gob:hover{
+  color:white !important;
+  border-color: #A57F2C !important;
+}
+
+
+.contadores-text{
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px; /* Tamaño adecuado para subtítulos */
+  font-weight: 400; /* Manténlo delgado para que no compita con el título */
+  letter-spacing: 0.5px; /* Espaciado ligero para mejorar legibilidad */
+  line-height: 1.5;
+}
+.ht-style{
+  border: 2px solid white;
+
+}
+.main{
+margin-top: -5%;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    /* word-wrap: break-word; */
+    /* background-clip: border-box; */
+    /* background-color: #fff; */
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 15px !important;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    padding: 30px;
+    margin: 10px;
+    color: white;
+}
+
+/* .card-move:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    /* transform: translateY(-2%);
+
+}
+ */
+
+.card-move{
+background-color: #611232  !important;
+}
+
+.titulos_textos{
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    color: rgb(92, 84, 84);
+
+}
+
+
+.table-bordered {
+    border: 1px solid #ddd !important;
+}
+
+  table caption {
+      padding: .5em 0;
+}
+
+  @media screen and (max-width: 767px) {
+    table caption {
+      display: none;
+    }
+}
+
+  .p {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+  }
+
+  .logosspc{
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+
+}
+
+.logosspc-mujeres{
+  position: absolute;
+  top: 10px;
+  left: 1410px;
+  /* opacity: .50; */
+}
+
+
+h2{
+  color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em; /* Tamaño de fuente para h2 */
+    font-weight: 600; /* Peso de fuente para h2 */
+    text-transform: capitalize !important;
+}
+
+.count-users{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.375;
+  color: white;
+}
+
+
+hr.horizontal.dark {
+  background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, .4), transparent);
+}
+
+hr.horizontal {
+  background-color: transparent;
+}
+
+hr{
+  color: white !important ;
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}

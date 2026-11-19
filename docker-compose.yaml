@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      target: development
+    container_name: via-sys
+    # restart: unless-stopped
+    ports:
+      - "8000:80"
+      # - "5173:5173"
+    extra_hosts:
+      - "scandb.sspc.gob.mx:10.100.72.3"
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+      - /var/www/html/public/build
+      # - /var/www/html/node_modules

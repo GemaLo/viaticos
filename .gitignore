@@ -1,0 +1,39 @@
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/public/build/*
+/public/hot
+/storage/*.key
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Laravel IDE helper
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+.env.docker
+*.pid
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+storage/logs/*.log
+
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.tar
+*.zip
+vendor/
